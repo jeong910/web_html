@@ -4,7 +4,7 @@
 # 23/06/19~23/06/20
 
 ```
-html5, doctype, html, head, meta, title, body, h1~6, p, strong,
-em, sub, sup, s, del, code, blockquote, q, address, hr
+html5 doctype html head meta title body h1~6 p strong
+em sub sup s del code blockquote q address hr
 &lt; &gt; &copy; &amp;
 ``` 
