@@ -10,6 +10,7 @@ em sub sup s del code blockquote q address hr
 ``` 
 
 # 23/06/21~23/06/22 Layout Tag
+**html5 semantic tag는 각 레이아웃 영역 의미에 맞게 사용해야 한다**
 ```
 header, nav, footer, main, section, article, aside,
 ul, ol, li, dl, dt, dd
