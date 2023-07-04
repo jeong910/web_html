@@ -1,0 +1,36 @@
+header {
+    background-color:aqua;
+    width:1200px; height:92px;
+}
+header h1 {
+    width:60px; height:70px;
+    float:left; margin:11px 0 11px 20px;
+}
+header h1 a{}
+header h1 a img {width:100%}
+header nav {
+    background-color:pink;
+    margin:39px 0 0 241px;
+    float:left;
+}
+header nav ul {}
+header nav ul .active {}
+header nav ul .active a {
+    color:#36b4e5;
+}
+header nav ul li {
+    float:
+}
+header nav ul li a {}
+header .lnb {
+    background-color:yellow;
+}
+header .lnb li {}
+header .lnb li a {}
+header .lnb li span {
+    width:1px; height:13px;
+    background-color:#aaa;
+    display:block; 
+}
+
+
