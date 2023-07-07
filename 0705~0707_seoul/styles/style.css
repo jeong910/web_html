@@ -1,58 +1,179 @@
+/* popup */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    width:34px; height:34px;
+}
+#top img {}
+/* all layout */
+header,
+main .visual,
+main .service,
+main .bnr_bg .bnr,
+main .board,
+main .field_info,
+main .news,
+footer {
+    background-color:aqua;
+    width:1152px; margin:0 auto;
+}
 header {}
 /* header-h top */
-header #h_top {}
-header #h_top .left {}
-header #h_top .left h1 {}
+header #h_top {
+    background-color:pink;
+    height:48px;
+}
+header #h_top .left {
+    background-color: yellow;
+    float:left; 
+}
+header #h_top .left h1 {
+    float:left; padding-top:10px;
+    width:110px; height:28px;
+}
 header #h_top .left h1 a {}
-header #h_top .left h1 a img {}
-header #h_top .left nav {}
+header #h_top .left h1 a img {width:100%}
+header #h_top .left nav {float:left;}
 header #h_top .left nav ul {}
-header #h_top .left nav ul li {}
-header #h_top .left nav ul li a {}
-header #h_top .right {}
-header #h_top .right li {}
-header #h_top .right li a {}
+header #h_top .left nav ul li {float:left; margin-left:20px;}
+header #h_top .left nav ul li a {
+    line-height:48px;
+    letter-spacing:-0.02em;
+}
+header #h_top .right {
+    background-color: green;
+    float:right;
+}
+header #h_top .right li {float:left; margin-left:20px;}
+header #h_top .right li:first-child {margin-left:0;}
+/* header #h_top .right li:nth-child(1) {margin-left:0;} */
+header #h_top .right li a {line-height:48px; letter-spacing:-0.02em;}
 /* header-h btm */
-header #h_btm {}
-header #h_btm h1 {}
+header #h_btm {
+    background-color:skyblue;
+    height:119px;
+}
+header #h_btm h1 {
+    background-color:beige;
+    float:left; width:150px; height:28px;
+    margin-top:45px;
+}
 header #h_btm h1 a {}
-header #h_btm h1 a img {}
-header #h_btm #search_frm {}
-header #h_btm #search_frm  fieldset {}
-header #h_btm #search_frm  fieldset legend {}
-header #h_btm #search_frm  fieldset input {}
-header #h_btm #search_frm  fieldset #search_btn {}
+header #h_btm h1 a img {width:100%}
+header #h_btm #search_frm {
+    background-color:aquamarine;
+    float:left;
+    width:369px; height:46px;
+    border:2px solid #1e6cb3;
+    padding:10px 20px 0;
+    margin:36px 0 0 230px;
+}
+header #h_btm #search_frm  fieldset {border:0;}
+header #h_btm #search_frm  fieldset legend {display:none;}
+header #h_btm #search_frm  fieldset input {
+    float:left;
+    width:calc(100% - 20px); /*빼기는 필수,주로 %와 px 계산할때*/
+}
+header #h_btm #search_frm  fieldset input::placeholder{
+    letter-spacing: -0.02em; color:#1e6cb3;
+}
+header #h_btm #search_frm  fieldset #search_btn {
+    float:right;
+    border:0; background:none;
+    width:20px; height:20px;
+    cursor:pointer; /*검색어 입력하고 누르는 느낌*/
+}
 header #h_btm #search_frm  fieldset #search_btn img {}
-header #h_btm .right {}
-header #h_btm .right #langfrm {}
-header #h_btm .right #langfrm fieldset {}
-header #h_btm .right #langfrm fieldset legend {}
-header #h_btm .right #langfrm fieldset select {}
+header #h_btm .right {
+    background-color: blueviolet;
+    float:right; margin-top:18px;
+}
+header #h_btm .right #langfrm {
+    text-align:right; 
+}
+header #h_btm .right #langfrm fieldset {border:0;}
+header #h_btm .right #langfrm fieldset legend {display:none;}
+header #h_btm .right #langfrm fieldset select {
+    border:1px solid #1e6cb3;
+    font-size:0.813rem; letter-spacing:-0.02em;
+    width:93px; padding:5px 0;
+}
 header #h_btm .right #langfrm fieldset select option {}
-header #h_btm .right #langfrm fieldset #lang_btn {}
+header #h_btm .right #langfrm fieldset #lang_btn {
+    width: 30px; height: 29px;
+    background-color:#1e6cb3; color:#fff;
+    border:0; cursor:pointer;
+}
 header #h_btm .right .weather {}
 header #h_btm .right .weather .current_weather {}
-header #h_btm .right .weather .current_weather em {}
+header #h_btm .right .weather .current_weather em {
+    font-size:2.063rem; font-weight:500; letter-spacing:-0.02em;
+}
 header #h_btm .right .weather .current_dust {}
 /* main */
 main {}
 /* main-1 광고배너 */
-main .visual {}
-main .visual .left {}
+main .visual {
+    background:gray;
+    overflow:hidden;
+}
+main .visual .left {
+    background-color: aqua;
+    position:relative;/*겹치는 대상 부모기준*/
+    width:770px; height:350px; float:left;
+}
 main .visual .left img {}
-main .visual .left .close {}
-main .visual .right {}
-main .visual .right .covid {}
-main .visual .right .covid .date {}
+main .visual .left .close {
+    letter-spacing:-0.02em; font-weight:500 ;
+    padding:10px; border-radius:5px; 
+    background-color: #1e6cb3; color:#fff;
+    position:absolute; /*겹치는 대상*/
+    right:10px; bottom:10px;
+}
+main .visual .right {
+    background-color:yellow;
+    width:360px; float:right;
+}
+main .visual .right .covid {
+    position:relative; display:block;
+    width:360px; height:230px;
+}
+main .visual .right .covid span {
+    background-color:pink;
+    position:absolute;
+}
+main .visual .right .covid .date {top:19px; right:22px;}
 main .visual .right .covid .data {}
 main .visual .right .covid .data1 {}
 main .visual .right .covid .data2 {}
-main .visual .right .covid .data3 {}
+main .visual .right .covid .data3 {left:60px; bottom:57px;}
 main .visual .right .covid .data4 {}
 main .visual .right .covid .data5 {}
 main .visual .right .covid img {}
 main .visual .right .traffic {}
 main .visual .right .traffic img {}
+/* 주요서비스~새소식 제목 디자인 그룹 */
+/* 정리후 */
+main section .title {background-color:blue;}
+main section .title h2 {}
+main section .title .site {}
+main section .title .more {}
+/* 정리전 */
+/* main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title h2 .more {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .field_info .title {}
+main .field_info .title h2 {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {} */
 /* main-2 주요서비스*/
 main .service {}
 main .service .title {}
