@@ -324,23 +324,80 @@ footer .top {
     overflow:hidden;
 }
 footer .top .left {float:left;}
-footer .top .left a {}
+footer .top .left a {float:left;}
+/* left-a 가상선택자(구분선용) */
+footer .top .left a::after {
+    /* 가상선택자의 필수속성1 */
+    content:'';/*빈문자열(필요할때만 문자)*/
+    width:1px; height:10px;
+    background:#000;
+    display:inline-block;
+    margin:0 10px;
+}
+/* 사이트맵(마직막a) 구분선 제거하기 */
+footer .top .left a:last-child::after {
+    display:none; 
+}
 footer .top .right {float:right;}
-footer .top .right a {}
-footer .top .right a:first-child {
-    background:white url(../images/icon_sns2/icon_set_sns_01.png) no-repeat;
+footer .top .right a {
+    background:no-repeat;
     width:25px; height:25px;
     display:inline-block;
     text-indent:-9999px; /*화면밖 글자 내보내기 
-    값을 크게 쓰는 이유: 화면을 축소해도 글자가 보이지 않게 멀리 내보낸다.*/
+    값을 크게 쓰는 이유: 화면을 축소해도 나간 글자가 보이지 않게 멀리 내보낸다.*/
+}
+footer .top .right a:first-child {
+    background-image:url(../images/icon_sns2/icon_set_sns_01.png);
+}
+footer .top .right a:first-child:hover {
+    background-image:url(../images/icon_sns2/icon_set_sns_08.png);
+} /* hover 마우스를 올렸을때 동적기능(색깔변경) */
+footer .top .right a:nth-child(2) {
+    /* background:색상 이미지 반복 고정 위치; */
+    background-image:url(../images/icon_sns2/icon_set_sns_02.png);
+}
+footer .top .right a:nth-child(2):hover {
+    background-image:url(../images/icon_sns2/icon_set_sns_09.png);
+}
+footer .top .right a:nth-child(3) {
+    background-image:url(../images/icon_sns2/icon_set_sns_03.png);
+}
+footer .top .right a:nth-child(3):hover {
+    background-image:url(../images/icon_sns2/icon_set_sns_10.png);
+}
+footer .top .right a:nth-child(4) {
+    background-image:url(../images/icon_sns2/icon_set_sns_04.png);
+}
+footer .top .right a:nth-child(4):hover {
+    background-image:url(../images/icon_sns2/icon_set_sns_11.png);
+}
+footer .top .right a:nth-child(5) {
+    background-image:url(../images/icon_sns2/icon_set_sns_05.png);
+}
+footer .top .right a:nth-child(5):hover {
+    background-image:url(../images/icon_sns2/icon_set_sns_12.png);
+}
+footer .top .right a:last-child {
+    background-image:url(../images/icon_sns2/icon_set_sns_06.png);
+}
+footer .top .right a:last-child:hover {
+    background-image:url(../images/icon_sns2/icon_set_sns_13.png);
 }
 /* footer-f btm */
 footer .btm {}
 footer .btm .left {}
 footer .btm .left p {}
 footer .btm .left p img {}
-footer .btm .left address {}
-footer .btm .left address a {}
-footer .btm .right {}
+footer .btm .left address {
+    line-height:30px; letter-spacing:-0.02em;
+    
+}
+footer .btm .left address a {
+
+}
+footer .btm .right {
+}
 footer .btm .right a {}
-footer .btm .right a img {}
+footer .btm .right a img {
+    float:right; margin-top:30px;
+}
