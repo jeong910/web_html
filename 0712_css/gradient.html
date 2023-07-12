@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>gradient</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        div {height:300px;}
+        .bg1 {
+            background:linear-gradient(-100deg,blue,gray,pink);
+            /* background:radial-gradient(circle, blue,gray,pink); */
+        }
+        .bg2 {
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,121,1) 30%, rgba(0,212,255,1) 100%);
+        }
+        .bg3 {
+            background:url(https://picsum.photos/id/2/500);
+        }
+        .bg3 .gra {
+            background: rgb(0,36,33);
+            background: linear-gradient(90deg, rgba(0,36,33,1) 0%, rgba(255,255,255,0) 100%);
+        }
+        .bg4 {
+            background:url(https://picsum.photos/id/20/1920);}
+        .bg4 .gra {
+            background: rgb(0,16,36);
+            background: linear-gradient(90deg, rgba(0,16,36,1) 0%, rgba(255,255,255,0) 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- 포토샵 일러스트레이터 =gradient= 정적인 색상 -->
+    <!-- CSS =gradient =동적 색상 (애니메이션) -->
+    <!-- gradient animation CSS -->
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3">
+        <div class="gra"></div>
+    </div>
+    <div class="bg4">
+        <div class="gra"></div>
+    </div>
+</body>
+</html>
